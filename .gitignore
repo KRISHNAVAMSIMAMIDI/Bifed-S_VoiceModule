@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+temp/
+tmp/
+
+# Biometric data and recordings
+*.wav
+*.mp3
+*.flac
+*.webm
+*.ogg
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Model weights
+backend/models_weights/
+
+# Biometric data and application storage
+backend/storage/
+
+# Local development tools
+.tools/

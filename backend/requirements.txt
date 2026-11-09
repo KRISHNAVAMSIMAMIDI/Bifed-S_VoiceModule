@@ -1,0 +1,33 @@
+# BiFed-S Voice Authentication Web Application Dependencies
+# Validated for Windows 64-bit with Python 3.11.9
+
+# Web API Framework
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
+python-multipart>=0.0.9
+python-dotenv>=1.0.0
+
+# Scientific & Audio Processing Stack (Pinned to NumPy 1.x ABI compatible versions)
+numpy==1.26.4
+pandas==2.2.3
+scipy>=1.11.0
+soundfile>=0.12.1
+imageio-ffmpeg>=0.4.9
+huggingface_hub>=0.20.0
+
+# Deep Learning Framework (Torch 2.8.0 matches Torchaudio 2.8.0 with torchaudio.AudioMetaData support for DeepFilterNet)
+torch==2.8.0
+torchaudio==2.8.0
+
+# Stage 2: AASIST Anti-Spoofing
+onnxruntime>=1.17.0
+
+# Stage 3: DeepFilterNet3 Speech Enhancement
+deepfilternet==0.5.6
+
+# Stage 4: Silero VAD Voice Activity Detection
+silero-vad>=5.1.2
+
+# Stage 5: ECAPA-TDNN Speaker Verification
+speechbrain>=1.0.0
